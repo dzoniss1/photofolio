@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Photofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        
+        <nav class="nav" id="myNav">
+            <a class="closebtn" href="javascript:void(0)" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+            <ul class="nav-links">
+              <a href="">HOME</a>
+              <a href="">ABOUT</a>
+              <a href="">GALLERY</a>
+              <a href="">NEZINU</a>
+            </ul>
+            <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </nav>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/samantazosena/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/samanta.zosena"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </header>
+
+    
+    <div class="text">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    </div>
+    <div class="image-grid">
+        <img src="pictures\IMG-20240517-WA0014.jpg" alt="pets">
+        <img src="pictures\IMG-20240517-WA0015.jpg" alt="nature">
+        <img src="pictures\IMG-20240517-WA0016.jpg" alt="pets">
+        <img src="pictures\IMG-20240517-WA0017.jpg" alt="nature">
+        <img src="pictures\IMG-20240517-WA0018.jpg" alt="nature">
+        <img src="pictures\IMG-20240517-WA0019.jpg" alt="nature">
+        <img src="pictures\buenos.jpg" alt="buenos">
+        <img src="pictures\buenos.jpg" alt="buenos">
+    </div>
+
+    <footer class="footer">caw</footer>
+<script src="script.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAjrga0Bzn5gRxrABa9_ftCZuCvjHR25cM",
+      authDomain: "photofolio-a84cd.firebaseapp.com",
+      projectId: "photofolio-a84cd",
+      storageBucket: "photofolio-a84cd.appspot.com",
+      messagingSenderId: "715353290688",
+      appId: "1:715353290688:web:d044f73630a4c99b7bba25",
+      measurementId: "G-PTSG558WSD"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
